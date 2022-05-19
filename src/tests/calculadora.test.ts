@@ -1,5 +1,7 @@
 import Calculadora from "../lib/Calculadora";
 
+
+
 test('la suma de 2 y 3 es 5', () => {
     // arrange
     const calculadora = new Calculadora();
@@ -17,3 +19,15 @@ test('la suma de 2 y 3 es 5', () => {
     // assert
     expect(resultado).toBe(0);
  })
+
+ test('El producto de 2 y 3 vale 6', () => { 
+    // arrange
+    const calculadora = new Calculadora();
+    const a = 2;
+    const b = 3;
+    const resultExpected = 6;
+    // 
+    const resultado = calculadora.prod(2, 3);
+    // 
+    expect(resultado).toBe(resultExpected);
+  })
